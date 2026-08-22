@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #f8fafc;
+  --bg-navbar: rgba(255, 255, 255, 0.9);
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --text-title: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-faint: #94a3b8;
+  --badge-bg: #f1f5f9;
+  --badge-border: #e2e8f0;
+  --badge-text: #334155;
+  --heatmap-bg: #ffffff;
+  --heatmap-border: #d0d7de;
+  --heatmap-empty: #ebedf0;
+}
+
+html.dark {
+  --bg-main: #0a0a0c;
+  --bg-navbar: rgba(10, 10, 12, 0.85);
+  --bg-card: #0d1117;
+  --bg-card-hover: #161b22;
+  --border-subtle: #21262d;
+  --border-strong: #30363d;
+  --text-title: #ffffff;
+  --text-body: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-faint: #64748b;
+  --badge-bg: #161b22;
+  --badge-border: #21262d;
+  --badge-text: #8b949e;
+  --heatmap-bg: #0d1117;
+  --heatmap-border: #30363d;
+  --heatmap-empty: #161b22;
+}
+
+body {
+  background-color: var(--bg-main) !important;
+  color: var(--text-body) !important;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  min-height: 100vh;
+}
+
+.theme-bg-main {
+  background-color: var(--bg-main);
+}
+
+.theme-bg-card {
+  background-color: var(--bg-card);
+}
+
+.theme-bg-hover:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.theme-border {
+  border-color: var(--border-subtle);
+}
+
+.theme-border-strong {
+  border-color: var(--border-strong);
+}
+
+.theme-text-title {
+  color: var(--text-title);
+}
+
+.theme-text-body {
+  color: var(--text-body);
+}
+
+.theme-text-muted {
+  color: var(--text-muted);
+}
+
+.theme-text-faint {
+  color: var(--text-faint);
+}
+
+.font-handwritten {
+  font-family: 'Caveat', cursive;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
