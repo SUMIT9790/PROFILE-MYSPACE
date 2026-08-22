@@ -2,8 +2,6 @@
 
 A sleek, modern, developer-centric portfolio website built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**. Modeled after high-end minimalist developer aesthetics featuring dynamic time calculations, GitHub activity heatmap, dual theme switching (Dark/Light mode), and a custom cursor.
 
-![Portfolio Preview](/public/profile.jpg)
-
 ## 🚀 Features
 
 - ⚡ **Minimalist Developer Aesthetics**: Dark mode default (`#0a0a0c`) with crisp typography (JetBrains Mono & Inter) and Caveat handwritten accents.
@@ -30,8 +28,8 @@ A sleek, modern, developer-centric portfolio website built with **React**, **Vit
 
 ### 1. Clone & Install Dependencies
 ```bash
-git clone https://github.com/SUMIT9790/PROFILE.git
-cd PROFILE
+git clone https://github.com/SUMIT9790/PROFILE-MYSPACE.git
+cd PROFILE-MYSPACE
 npm install
 ```
 
@@ -52,17 +50,14 @@ npm run build
 
 ### Step 1: Push Code to GitHub
 ```bash
-git init
 git add .
-git commit -m "Initial commit: Sumit Kumar Software Engineer Portfolio"
-git branch -M main
-git remote add origin https://github.com/SUMIT9790/PROFILE.git
-git push -u origin main
+git commit -m "Update portfolio README"
+git push origin main
 ```
 
 ### Step 2: Import Project on Vercel
 1. Go to [Vercel Dashboard](https://vercel.com/dashboard) and click **"Add New..."** -> **"Project"**.
-2. Select your **`PROFILE`** GitHub repository.
+2. Select your **`PROFILE-MYSPACE`** GitHub repository.
 3. Framework Preset: **Vite** (Build Command: `npm run build`, Output Directory: `dist`).
 4. Click **"Deploy"**!
 
