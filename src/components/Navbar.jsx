@@ -8,18 +8,22 @@ export const Navbar = ({ personal, githubUrl }) => {
 
   return (
     <header className="sticky top-0 z-40 bg-[var(--bg-navbar)] backdrop-blur-md border-b theme-border transition-colors">
-      <div className="max-w-6xl mx-auto px-4 sm:px-8 py-3.5 flex items-center justify-between">
-        {/* Left Avatar Icon & Clean Headline */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 py-3 flex items-center justify-between">
+        {/* Left Pixel Art Avatar Badge & Headline */}
         <div className="flex items-center space-x-3">
           <a
             href="#"
-            className="w-9 h-9 rounded-md theme-bg-card border theme-border flex items-center justify-center font-mono font-bold text-xs theme-text-title hover:border-emerald-500 transition-all shadow-sm flex-shrink-0 p-1"
-            title="User Profile"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg theme-bg-card border theme-border flex items-center justify-center overflow-hidden hover:border-emerald-500 transition-all shadow-sm flex-shrink-0 p-0.5 group"
+            title="SUMIT KUMAR"
           >
-            <img src="/favicon.png" alt="Profile Icon" className="w-full h-full object-contain filter dark:invert-0 invert" />
+            <img
+              src="/avatar-icon.png"
+              alt="Avatar Icon"
+              className="w-full h-full object-cover rounded-md group-hover:scale-105 transition-transform"
+            />
           </a>
 
-          <span className="font-mono text-xs font-black tracking-wider uppercase theme-text-title">
+          <span className="font-mono text-xs sm:text-sm font-black tracking-wider uppercase theme-text-title">
             {personal.siteName || "SUMIT KUMAR || SOFTWARE ENGINEER"}
           </span>
         </div>
