@@ -13,13 +13,13 @@ export const Navbar = ({ personal, githubUrl }) => {
         <div className="flex items-center space-x-3">
           <a
             href="#"
-            className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg theme-bg-card border theme-border flex items-center justify-center overflow-hidden hover:border-emerald-500 transition-all shadow-sm flex-shrink-0 p-0.5 group"
+            className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg theme-bg-card border theme-border flex items-center justify-center overflow-hidden hover:border-emerald-500 transition-all shadow-sm flex-shrink-0 p-0.5 group"
             title="SUMIT KUMAR"
           >
             <img
               src="/avatar-icon.png"
               alt="Avatar Icon"
-              className="w-full h-full object-cover rounded-md group-hover:scale-105 transition-transform"
+              className="w-full h-full object-contain rounded-md group-hover:scale-105 transition-transform"
             />
           </a>
 
