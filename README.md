@@ -1,68 +1,42 @@
-# SUMIT KUMAR || SOFTWARE ENGINEER - Developer Portfolio
+# Sumit Kumar 👋
 
-A sleek, modern, developer-centric portfolio website built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**. Modeled after high-end minimalist developer aesthetics featuring dynamic time calculations, GitHub activity heatmap, dual theme switching (Dark/Light mode), and a custom cursor.
+**Software Engineer • B.Tech Computer Science @ VIT Bhopal University**
 
-## 🚀 Features
-
-- ⚡ **Minimalist Developer Aesthetics**: Dark mode default (`#0a0a0c`) with crisp typography (JetBrains Mono & Inter) and Caveat handwritten accents.
-- 🕒 **Live Dynamic Local Time**: Real-time IST clock updating with timezone calculations.
-- 🟢 **GitHub Contribution Heatmap**: Authentic GitHub dark/light contribution calendar with 6 months activity for `@SUMIT9790`.
-- 🌓 **Dual Dark & Light Theme**: Seamless, instant theme switching with synchronized CSS variables.
-- 📱 **Fully Responsive Layout**: Full-width spacious grid that looks stunning on mobile, tablet, and desktop screens.
-- 📱 **Direct WhatsApp & Social Links**: Quick 1-click WhatsApp chat (`+91 9798676653`), GitHub, LinkedIn, and LeetCode links.
-- 🎯 **Custom Pointer Cursor**: Subtle, non-distracting `mix-blend-difference` cursor follower that expands over interactive elements.
-- 💬 **Inspiring Quote Banner**: *"I have not come this far to only come this far 🙂"*
+📍 **Location**: Patna, Bihar, India  
+✉️ **Email**: [sumitkumar9798om@gmail.com](mailto:sumitkumar9798om@gmail.com)  
+📱 **Phone / WhatsApp**: [+91 9798676653](https://wa.me/919798676653)  
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 About Me
 
-- **Frontend**: React 18, Vite 6
-- **Styling**: Tailwind CSS v4, Vanilla CSS variables
-- **Icons**: Lucide React + Custom SVG icons
-- **Animations**: Framer Motion
-
----
-
-## 💻 Local Setup & Development
-
-### 1. Clone & Install Dependencies
-```bash
-git clone https://github.com/SUMIT9790/PROFILE-MYSPACE.git
-cd PROFILE-MYSPACE
-npm install
-```
-
-### 2. Run Local Development Server
-```bash
-npm run dev
-```
-Open **`http://localhost:5173/`** in your browser.
-
-### 3. Build for Production
-```bash
-npm run build
-```
+- 🎓 **Education**: B.Tech in Computer Science and Engineering (Core) at VIT Bhopal University (CGPA: 8.22 / 10.0).
+- 💻 **Focus Area**: Full-Stack Web Development, Scalable Systems, and Clean Software Architecture.
+- 🧩 **Problem Solving**: Active competitive programmer on LeetCode ([@SUMIT9708](https://leetcode.com/u/SUMIT9708/)).
+- 🌐 **Open Source**: Active open-source contributor on GitHub ([@SUMIT9790](https://github.com/SUMIT9790)).
+- 🎯 **Goals**: Open for Software Engineering internships, full-time engineering roles, and tech collaborations.
 
 ---
 
-## 🌐 Deploying to Vercel
+## 🛠️ Technical Skills
 
-### Step 1: Push Code to GitHub
-```bash
-git add .
-git commit -m "Update portfolio README"
-git push origin main
-```
-
-### Step 2: Import Project on Vercel
-1. Go to [Vercel Dashboard](https://vercel.com/dashboard) and click **"Add New..."** -> **"Project"**.
-2. Select your **`PROFILE-MYSPACE`** GitHub repository.
-3. Framework Preset: **Vite** (Build Command: `npm run build`, Output Directory: `dist`).
-4. Click **"Deploy"**!
+| Category | Technologies & Tools |
+| :--- | :--- |
+| **Languages** | C++, JavaScript, TypeScript, Python, HTML5, CSS3, SQL |
+| **Frontend** | React.js, Next.js, Vite, Tailwind CSS, REST API Integration |
+| **Backend** | Node.js, Express.js, FastAPI |
+| **Databases** | MongoDB, PostgreSQL, MySQL |
+| **DevOps & Tools** | Git, GitHub, VS Code, Postman, Vercel |
 
 ---
 
-## 📄 License
+## 🔗 Connect With Me
 
-This project is open source and available under the [MIT License](LICENSE).
+- 💼 **LinkedIn**: [linkedin.com/in/sumit-gupta-4b007a2b9](https://www.linkedin.com/in/sumit-gupta-4b007a2b9)
+- 🧩 **LeetCode**: [leetcode.com/u/SUMIT9708/](https://leetcode.com/u/SUMIT9708/)
+- 🐙 **GitHub**: [github.com/SUMIT9790](https://github.com/SUMIT9790)
+- 💬 **WhatsApp**: [wa.me/919798676653](https://wa.me/919798676653)
+
+---
+
+*“I have not come this far to only come this far 🙂”*
