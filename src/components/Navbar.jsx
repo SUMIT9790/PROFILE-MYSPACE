@@ -9,17 +9,17 @@ export const Navbar = ({ personal, githubUrl }) => {
   return (
     <header className="sticky top-0 z-40 bg-[var(--bg-navbar)] backdrop-blur-md border-b theme-border transition-colors">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 py-3 flex items-center justify-between">
-        {/* Left Pixel Art Avatar Badge & Headline */}
+        {/* Left Avatar Badge & Headline */}
         <div className="flex items-center space-x-3">
           <a
             href="#"
-            className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg theme-bg-card border theme-border flex items-center justify-center overflow-hidden hover:border-emerald-500 transition-all shadow-sm flex-shrink-0 p-0.5 group"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg theme-bg-card border theme-border flex items-center justify-center overflow-hidden hover:border-emerald-500 transition-all shadow-sm flex-shrink-0 p-1.5 group"
             title="SUMIT KUMAR"
           >
             <img
               src="/avatar-icon.png"
               alt="Avatar Icon"
-              className="w-full h-full object-contain rounded-md group-hover:scale-105 transition-transform"
+              className="w-full h-full object-contain filter dark:invert invert-0 transition-transform group-hover:scale-110"
             />
           </a>
 
