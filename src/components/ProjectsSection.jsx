@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronUp, ExternalLink, Coffee, Code, FileText, Cpu, Terminal } from 'lucide-react';
+import { ChevronDown, ChevronUp, ExternalLink, Coffee, Code, FileText, Cpu, Terminal, Database, Activity, ShieldCheck, Server } from 'lucide-react';
 
 export const ProjectsSection = ({ projects }) => {
   const [openProjectId, setOpenProjectId] = useState(projects[0]?.id || null);
@@ -11,17 +11,14 @@ export const ProjectsSection = ({ projects }) => {
 
   const getProjectIcon = (title) => {
     const t = title.toLowerCase();
-    if (t.includes('café') || t.includes('cafe') || t.includes('ops')) {
-      return <Coffee className="w-4 h-4 theme-text-title" />;
+    if (t.includes('groundwater') || t.includes('analytics')) {
+      return <Activity className="w-4 h-4 text-emerald-400" />;
     }
-    if (t.includes('repo') || t.includes('github') || t.includes('explainer')) {
-      return <Code className="w-4 h-4 theme-text-title" />;
+    if (t.includes('taskpulse') || t.includes('scheduler')) {
+      return <Server className="w-4 h-4 text-cyan-400" />;
     }
-    if (t.includes('doc') || t.includes('rag') || t.includes('pdf')) {
-      return <FileText className="w-4 h-4 theme-text-title" />;
-    }
-    if (t.includes('ai') || t.includes('llm')) {
-      return <Cpu className="w-4 h-4 theme-text-title" />;
+    if (t.includes('citizen') || t.includes('identity') || t.includes('registry')) {
+      return <ShieldCheck className="w-4 h-4 text-purple-400" />;
     }
     return <Terminal className="w-4 h-4 theme-text-title" />;
   };
@@ -109,6 +106,18 @@ export const ProjectsSection = ({ projects }) => {
                       )}
 
                       <div className="flex flex-wrap items-center gap-3 pt-2 font-mono text-xs">
+                        {project.demoUrl && project.demoUrl !== '#' && (
+                          <a
+                            href={project.demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-3 py-1.5 rounded bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 font-semibold flex items-center space-x-1.5 transition-colors uppercase tracking-wider text-[11px]"
+                          >
+                            <span>LIVE DEMO</span>
+                            <ExternalLink className="w-3 h-3 text-emerald-400" />
+                          </a>
+                        )}
+
                         {project.repoUrl && (
                           <a
                             href={project.repoUrl}

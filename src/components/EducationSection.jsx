@@ -29,7 +29,7 @@ export const EducationSection = ({ educationList }) => {
                     {edu.institution}
                   </h3>
                   <p className="text-xs theme-text-muted font-sans mt-0.5">
-                    {edu.degree} {edu.cgpa ? `· CGPA ${edu.cgpa}` : ''}
+                    {edu.degree}
                   </p>
                 </div>
               </div>

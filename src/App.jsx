@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { portfolioData as initialData } from './config/portfolioData';
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/Navbar';
@@ -9,35 +9,24 @@ import { StackSection } from './components/StackSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { ProjectsSection } from './components/ProjectsSection';
 import { EducationSection } from './components/EducationSection';
+import { CertificationsSection } from './components/CertificationsSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
-import { CustomCursor } from './components/CustomCursor';
 
 export default function App() {
-  const [data] = useState(() => {
-    const saved = localStorage.getItem('user_portfolio_data');
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved);
-        if (parsed.personal && parsed.personal.name === "SUMIT KUMAR") {
-          parsed.personal.avatarUrl = "/profile.jpg";
-          parsed.personal.siteName = "SUMIT KUMAR";
-          parsed.personal.initials = "SK";
-          parsed.personal.location = "Patna, Bihar, India";
-          return parsed;
-        }
-      } catch (e) {
-        return initialData;
-      }
+  useEffect(() => {
+    try {
+      localStorage.removeItem('user_portfolio_data');
+    } catch (e) {
+      // ignore
     }
-    return initialData;
-  });
+  }, []);
+
+  const [data] = useState(() => initialData);
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen theme-bg-main theme-text-body transition-colors relative cursor-default">
-        {/* Custom Circular Mouse Follower Pointer */}
-        <CustomCursor />
+      <div className="min-h-screen theme-bg-main theme-text-body transition-colors relative">
 
         {/* Navigation Header */}
         <Navbar
@@ -84,6 +73,11 @@ export default function App() {
           {/* Education Section */}
           <EducationSection
             educationList={data.education}
+          />
+
+          {/* Certifications Section */}
+          <CertificationsSection
+            certifications={data.certifications}
           />
 
           {/* Contact Section */}
